@@ -48,3 +48,17 @@ end
 noclip() -- to toggle noclip() and clip()
     print("Clicked")
 end)
+local Tab = Window:NewTab("Player Mods")
+local Section = Tab:NewSection("Player Mods")
+Section:NewButton("Wrong Glass Detector", "Can see which glass is wrong", function()
+		while true do
+   wait(0.3)
+for _,v in pairs(game:GetService("Workspace")["Glass Bridge"].GlassPane:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+v.Parent.Color = Color3.fromRGB(255,0,0)
+
+end
+end
+		end
+    print("Clicked")
+end)
