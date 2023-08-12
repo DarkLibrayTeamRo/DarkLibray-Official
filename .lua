@@ -54,6 +54,9 @@ noclip() -- to toggle noclip() and clip()
     print("Clicked")
 end)
 Section:NewButton("Player Fov", "Player fov hack total fov 128", function()
+		local FovNumber = 120 --Enter your FOV number here
+local Camera = workspace.CurrentCamera
+Camera.FieldOfView = FovNumber
     print("Clicked")
 end)
 local Tab = Window:NewTab("Player Mods")
@@ -70,7 +73,7 @@ end
 		end
     print("Clicked")
 end)
-Section:NewButton("Autu Kill all ServSide Only!", "its not kill everyone you will teleport to player automatic then yoyr need to kill but its cool its only work on ServerSide", function()
+Section:NewButton("Auto Kill all ServerSide Only!", "its not kill everyone you will teleport to player automatic then yoyr need to kill but its cool its only work on ServerSide", function()
 		spawn(function()
     while wait(0.00000000000000000000000000000000000000000000000000000000000000000001) do
         for i, v in next, game:GetService("Players"):GetChildren() do
