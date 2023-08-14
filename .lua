@@ -94,3 +94,10 @@ Section:NewButton("Auto Kill all ServerSide Only!", "its not kill everyone you w
 end)
     print("Clicked")
 end)
+local Tab = Window:NewTab("Special Menu")
+local Section = Tab:NewSection("Special Menu")
+Section:NewButton("Dex Explorer Special!", "This is Dex Explorer works on Mobile or PC Both", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+    print("Clicked")
+end)
+
