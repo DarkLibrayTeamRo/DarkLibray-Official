@@ -100,4 +100,13 @@ Section:NewButton("Dex Explorer Special!", "This is Dex Explorer works on Mobile
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
     print("Clicked")
 end)
+Section:NewButton("Doors Hub", "Its a doors Hub i did not made that", function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))()
+    print("congratulations doors hub is open now")
+end)
+Section:NewButton("Keyboard script", "Keyboard for mobile", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    print("Keyboard script button has been clicked")
+end)
+
 
