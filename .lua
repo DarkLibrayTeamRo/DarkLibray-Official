@@ -108,5 +108,10 @@ Section:NewButton("Keyboard script", "Keyboard for mobile", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
     print("Keyboard script button has been clicked")
 end)
+local Section = Tab:NewSection("Script Making")
+Section:NewButton("Simple Spy", "Simple Spy Script RemoteSpy", function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/We87LDxW"))()
+    print(Simple Spy Script on")
+end)
 
 
